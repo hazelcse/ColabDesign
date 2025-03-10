@@ -114,7 +114,7 @@ def plot_pseudo_3D(xyz, c=None, ax=None, chainbreak=5, Ls=None,
   if isinstance(cmap, str):
     if cmap == "gist_rainbow": 
       c_seg *= 0.75
-    colors = matplotlib.cm.get_cmap(cmap)(c_seg)
+    colors = matplotlib.colormaps.get_cmap(cmap)(c_seg)
   else:
     colors = cmap(c_seg)
   
