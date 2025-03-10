@@ -243,7 +243,7 @@ class EmbeddingsAndEvoformer(hk.Module):
       offset = pos[:, None] - pos[None, :]
 
     clipped_offset = jnp.clip(
-        offset + c.max_relative_idx, a_min=0, a_max=2 * c.max_relative_idx)
+        offset + c.max_relative_idx, min=0, max=2 * c.max_relative_idx)
 
     dtype = jnp.bfloat16 if gc.bfloat16 else jnp.float32
 
