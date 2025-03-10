@@ -142,7 +142,7 @@ class design_model:
                   'adagrad':optax.adagrad,'adam':optax.adam,
                   'adamw':optax.adamw,'fromage':optax.fromage,
                   'lamb':optax.lamb,'lars':optax.lars,
-                  'noisy_sgd':optax.noisy_sgd,'dpsgd':optax.dpsgd,
+                  'noisy_sgd':optax.noisy_sgd,'dpsgd':optax.contrib.dpsgd,
                   'radam':optax.radam,'rmsprop':optax.rmsprop,
                   'sgd':optax.sgd,'sm3':optax.sm3,'yogi':optax.yogi}
     
