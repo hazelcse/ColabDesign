@@ -172,3 +172,5 @@ def pmpnn_af2(pdb, loc, rf_contigs):
   labels[2] = "mpnn"
   df = pd.DataFrame(data, columns=labels)
   df.to_csv(f'{loc}/mpnn_results.csv')
+
+  return f"{loc}/best.pdb"
